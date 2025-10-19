@@ -111,6 +111,7 @@ router.get("/", async (req, res) => {
         }
       });
     } catch (err) {
+      console.error("### සැබෑම දෝෂය මෙන්න: ", err);
       exec("pm2 restart Robin");
       console.log("service restarted");
       RobinPair();
@@ -129,5 +130,6 @@ process.on("uncaughtException", function (err) {
 });
 
 module.exports = router;
+
 
 
