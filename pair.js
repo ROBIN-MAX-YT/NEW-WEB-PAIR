@@ -99,7 +99,6 @@ router.get("/", async (req, res) => {
 
           await delay(100);
           return await removeFile("./session");
-          process.exit(0);
         } else if (
           connection === "close" &&
           lastDisconnect &&
@@ -130,6 +129,7 @@ process.on("uncaughtException", function (err) {
 });
 
 module.exports = router;
+
 
 
 
