@@ -9,7 +9,7 @@
      "restart": "pm2 restart robin"
     },
   "dependencies": {
-    "@whiskeysockets/baileys": "^6.7.20",
+    "@whiskeysockets/baileys": "github:Sky-Mansion/baileys",
     "qrcode": "^1.5.4",
     "awesome-phonenumber": "^7.5.0",
     "pino": "^9.14.0",
